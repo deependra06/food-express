@@ -1,13 +1,13 @@
 import { v4 as uuidv4 } from 'uuid';
 
-const generateShortId = () => {
+export const generateShortId = () => {
   return uuidv4().slice(0, 6);
 };
 
 export const initialData = {
   restaurants: [
     {
-      id: generateShortId(),
+      id: 'burger-palace',
       name: 'Burger Palace',
       image: 'https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=400',
       cuisine: ['Burgers', 'American'],
@@ -17,7 +17,7 @@ export const initialData = {
       isActive: true,
       menu: [
         {
-          id: generateShortId(),
+          id: 'burger-cheese-001',
           name: 'Classic Cheeseburger',
           description: 'Chicken patty with cheese, lettuce, and special sauce',
           price: 12.99,
@@ -26,7 +26,7 @@ export const initialData = {
           isAvailable: true
         },
         {
-          id: generateShortId(),
+          id: 'burger-chicken-002',
           name: 'Crispy Chicken Burger',
           description: 'Crispy fried chicken with mayo and coleslaw',
           price: 11.99,
@@ -37,7 +37,7 @@ export const initialData = {
       ]
     },
     {
-      id: generateShortId(),
+      id: 'pizza-heaven',
       name: 'Pizza Heaven',
       image: 'https://res.cloudinary.com/daxopysz5/image/upload/v1766514319/alan-hardman-SU1LFoeEUkk-unsplash_qopmhu.jpg?w=300',
       cuisine: ['Pizza', 'Italian'],
@@ -47,7 +47,7 @@ export const initialData = {
       isActive: true,
       menu: [
         {
-          id: generateShortId(),
+          id: 'pizza-margherita-001',
           name: 'Margherita Pizza',
           description: 'Classic pizza with tomato sauce and mozzarella',
           price: 16.99,
@@ -95,4 +95,3 @@ export const storage = {
 };
 
 storage.initializeData();
-export { generateShortId };
