@@ -1,0 +1,80 @@
+MINIMAL FOOD DELIVERY APP - FRONTEND ONLY
+=========================================
+
+TECHNOLOGY STACK
+----------------
+- Frontend: React.js with Vite
+- Authentication: Clerk
+- Styling: Tailwind CSS
+- State Management: Redux Toolkit
+- Routing: React Router DOM
+- Data: Mock data (no backend)
+
+PROJECT SCOPE (MINIMAL)
+-----------------------
+- Landing page
+- Restaurant listing
+- Restaurant details with menu
+- Shopping cart
+- Checkout process
+- User authentication
+- Order history (mock data)
+- No real payments or real-time features
+
+PAGES (MINIMAL SET)
+-------------------
+PUBLIC:
+- / - Landing page
+- /restaurants - Restaurant list
+- /restaurant/:id - Restaurant details
+
+PROTECTED:
+- /cart - Shopping cart
+- /checkout - Checkout
+- /orders - Order history
+- /profile - User profile
+
+MOCK DATA STRUCTURES
+--------------------
+RESTAURANTS:
+- id, name, image, cuisine, rating, deliveryTime, minOrder
+
+MENU ITEMS:
+- id, name, description, price, image, category
+
+ORDERS:
+- id, restaurant, items, total, status, date
+
+USER:
+- Basic profile from Clerk
+
+REDUX SLICES (MINIMAL)
+----------------------
+1. authSlice - Clerk integration
+2. restaurantSlice - Mock restaurant data
+3. cartSlice - Cart management
+4. orderSlice - Mock order history
+
+COMPONENTS (ESSENTIAL)
+----------------------
+- Header with navigation
+- RestaurantCard
+- MenuItem
+- CartItem
+- OrderCard
+- Footer
+
+NO BACKEND FEATURES
+-------------------
+- All data is mock/hardcoded
+- No real API calls
+- No payment processing
+- No real-time updates
+- Orders stored in localStorage/Redux only
+
+DEPENDENCIES
+------------
+Core: react, react-dom, @reduxjs/toolkit, react-redux, react-router-dom, @clerk/clerk-react
+Styling: tailwindcss, autoprefixer, postcss
+Icons: lucide-react (optional)
+

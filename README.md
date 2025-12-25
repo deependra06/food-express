@@ -1,30 +1,16 @@
-# Food Ordering Website
+# React + Vite
 
-Welcome to the Food Ordering Website project! This is a mini project created with React.js, Redux,Html and CSS for ordering food online. The website includes features such as user authentication, a home page with a menu, category pages, detailed food pages, a user profile, and a shopping cart.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
 
-## Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **User Authentication**: Users can register and log in with validation. User data is stored in local storage for simplicity in this mini project.
+## React Compiler
 
-- **Home Page**: The home page includes a top menu, an image slider for ads, and categories of food.
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-- **Category Page**: Each category has its own page with a list of foods related to that category.
+## Expanding the ESLint configuration
 
-- **Single Food Page**: Clicking on a food item in a category navigates the user to a detailed page about that specific food.
-
-- **Profile Page**: Users have a profile page where they can view and edit their personal information.
-
-- **Cart Page (Redux)**: The cart page is implemented with Redux, allowing users to perform the following actions:
-  - Add items to the cart
-  - Delete items from the cart
-  - Clear the entire cart
-  - Adjust item quantities with a responsive total
-
-## Technologies Used
-
-- React.js
-- Redux
-- Html
-- CSS
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
